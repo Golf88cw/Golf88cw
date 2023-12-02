@@ -85,3 +85,30 @@ The repository owner will receive an email informing them that you have enabled 
 
    ![Screenshot of the list of user namespace repositories. To the right of a repository, a kebab icon is outlined in dark orange.](/assets/images/help/business-accounts/user-namespace-repo-kebab.png)
 1. Read the warnings, then click **Yes, enable temporary access**.
+// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('GET /repos/{owner}/{repo}/check-runs/{check_run_id}', {
+  owner: 'OWNER',
+  repo: 'REPO',
+  check_run_id: 'CHECK_RUN_ID',
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})// Octokit.js
+// https://github.com/octokit/core.js#readme
+const octokit = new Octokit({
+  auth: 'YOUR-TOKEN'
+})
+
+await octokit.request('GET /repos/{owner}/{repo}/check-runs/{check_run_id}', {
+  owner: 'OWNER',
+  repo: 'REPO',
+  check_run_id: 'CHECK_RUN_ID',
+  headers: {
+    'X-GitHub-Api-Version': '2022-11-28'
+  }
+})
